@@ -2,6 +2,10 @@ var app = angular.module("portFolio", [ ]);
 
 app.factory("projectData", function(){
 	var object = {
+		pageHeader:{
+			heading:"Page Header Goes Here!",
+			subHeading:"This is the subheading for the page header"
+		},
 		bio:{
 			msgHead:"Example!!!!",
 			msgBody:"<Enter your example message body here!>",

@@ -9,21 +9,27 @@
 	<script type="text/javascript" src="modules/angular.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </head>
-<body class="container" ng-app="portFolio" ng-controller="MainCtrl">
-	<div class="row">
-		<div class="col-sm-6 col-md-4"  ng-repeat="project in data.projects">
-			<div class="thumbnail">
-				<img class="img-responsive" ng-src="{{project.imgSrc}}">
-				<div class="caption">
-					<h3>{{project.header}}</h3>
-					<p>{{project.description}}</p>
+<body ng-app="portFolio" ng-controller="MainCtrl">
+	<div class="header text-center jumbotron">
+		<h1>{{data.pageHeader.heading}}</h1>
+		<p>{{data.pageHeader.subHeading}}</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-4"  ng-repeat="project in data.projects">
+				<div class="thumbnail">
+					<img class="img-responsive" ng-src="{{project.imgSrc}}">
+					<div class="caption">
+						<h3>{{project.header}}</h3>
+						<p>{{project.description}}</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="jumbotron">
-		<h1>{{data.bio.msgHead}}</h1>
-		<p>{{data.bio.msgBody}}</p>
+		<div class="jumbotron">
+			<h1>{{data.bio.msgHead}}</h1>
+			<p>{{data.bio.msgBody}}</p>
+		</div>
 	</div>
 </body>
 </html>
