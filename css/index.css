@@ -1,16 +1,25 @@
+body{
+	background-color: #212121;
+}
+
 .header{
-	
+	background-color: #f57c00;	
+	color: white;
 }
 
 .card{
 	cursor: pointer;
 	box-shadow: 0px 0px 0px 0px gray;
-	-webkit-transition: box-shadow 0.5s;
-	transition: box-shadow 0.5s;
+	transform: rotate3d(0,0,0,0deg);
+	-webkit-transform: rotate3d(0,0,0,360deg);
+	-webkit-transition: box-shadow 1s, transform 1s;
+	transition: box-shadow 1s, transform 1s;
 }
 
 .card:hover{
 	cursor: pointer;
 	box-shadow: 0px 0px 20px 4px gray;
+	transform: rotate3d(1,1,1,360deg);
+	-webkit-transform: rotate3d(1,1,1,360deg);
 }
 
