@@ -10,10 +10,12 @@ app.factory("projectData", function(){
 			msgHead:"Example!!!!",
 			msgBody:"<Enter your example message body here!>",
 			name:"Your Name",
-			gplus:"",
-			twitter:"",
-			facebook:"",
-			website:""
+		},
+		contact:{
+			gplus:"google plus",
+			twitter:"twitter",
+			facebook:"facebook",
+			website:"yourwebsite"
 		},
 		projects:[
 			{
