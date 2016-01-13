@@ -15,14 +15,18 @@ body{
 .card{
 	cursor: pointer;
 	box-shadow: 0px 0px 0px 0px gray;
+	color: black;
 	transform: rotate3d(0,0,0,0deg);
 	-webkit-transform: rotate3d(0,0,0,360deg);
-	transition: box-shadow 1s, transform 1s, perspective 1s;
-	-webkit-transition: box-shadow 1s, transform 1s, perspective 1s;
+	transition: box-shadow 1s, transform 1s, background-color 1s, color 1s;
+	-webkit-transition: box-shadow 1s, transform 1s, background-color 1s, color 1s;
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;
 }
 
 .card:hover{
 	cursor: pointer;
+	background-color: #ffffe5;
 	box-shadow: 0px 0px 20px 4px gray;
 	transform: rotate3d(1,1,1,360deg);
 	-webkit-transform: rotate3d(1,1,1,360deg);
